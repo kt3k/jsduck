@@ -79,6 +79,7 @@ describe JsDuck::Aggregator do
       @doc[:name].should == "$button-height"
     end
     it "detects variable type" do
+      p @doc
       @doc[:type].should == "number"
     end
     it "detects variable default value" do
