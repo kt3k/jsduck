@@ -82,6 +82,13 @@ module JsDuck
         # code-blocks beginning with empty line.
         input.gsub!(/<pre>(<code>)?\n?/, "<pre>\\1")
 
+        p RDiscount.inspect
+        p RDiscount.methods
+
+        p RDiscount.new('abc')
+
+        p RDiscount.new('abc').to_html
+
         replace(RDiscount.new(input).to_html)
       end
 
